@@ -43,7 +43,7 @@ function updateCoffees(e) {
     div.innerHTML = renderCoffees(filteredCoffees);
 }
 
-
+// allows search for coffee by name
 function searchCoffee(userInput) {
     var tempArray =[];
     var temp = userInput;
@@ -58,6 +58,8 @@ function searchCoffee(userInput) {
     });
     return tempArray;
 }
+
+//renders page to update by search
 function changeBySearchName(e) {
     var tempN = searchCoffee(e);
     div.innerHTML = renderCoffees(tempN)

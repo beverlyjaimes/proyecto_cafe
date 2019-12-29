@@ -48,6 +48,7 @@ function searchCoffee(userInput) {
     var tempArray =[];
     var temp = userInput;
     userInput = userInput.charAt(0).toUpperCase();
+    //case sensitive search Bonus*
     temp = temp.substr(1);
     userInput = userInput + temp;
     coffees.forEach(function (e) {

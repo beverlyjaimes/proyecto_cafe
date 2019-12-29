@@ -1,0 +1,5 @@
+.idea/*
+*.iml
+secret.txt
+img/*
+keys.js

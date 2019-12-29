@@ -36,6 +36,7 @@ function updateCoffees(e) {
             filteredCoffees.push(coffee);
         } else if (selectedRoast === 'All') {
             filteredCoffees.push(coffee);
+        //    Bonus All*
         }
     });
 

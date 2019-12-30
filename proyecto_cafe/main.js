@@ -93,6 +93,9 @@ let div = document.querySelector('#coffees');
 let submitButton = document.querySelector('#submit');
 let roastSelection = document.querySelector('#roast-selection');
 let roastSearchN = document.getElementById('roast-search');
+let addCoffeeButton = document.querySelector('#addCoffee');
+let addCoffeeName = document.getElementById('#addCoffeeName');
+let addCoffeeRoast = document.getElementById('#addCoffeeRoast');
 
 //renders coffees on html
 div.innerHTML = renderCoffees(coffees);
@@ -100,6 +103,7 @@ div.innerHTML = renderCoffees(coffees);
 
 
 submitButton.addEventListener('click', updateCoffees);
+addCoffeeButton.addEventListener('click', addCoffee);
 
 roastSearchN.addEventListener("keyup", function () {
     let temp = roastSearchN.value;

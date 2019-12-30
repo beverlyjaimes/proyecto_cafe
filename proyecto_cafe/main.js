@@ -1,4 +1,4 @@
-"use strict"
+"use strict";
 
 //displays individual coffee in coffee array
 

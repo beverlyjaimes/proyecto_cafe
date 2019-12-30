@@ -92,7 +92,6 @@ coffees.reverse();
 let div = document.querySelector('#coffees');
 let submitButton = document.querySelector('#submit');
 let roastSelection = document.querySelector('#roast-selection');
-let allR = document.querySelector('#all-ro');
 let roastSearchN = document.getElementById('roast-search');
 
 //renders coffees on html
@@ -106,4 +105,6 @@ roastSearchN.addEventListener("keyup", function () {
     let temp = roastSearchN.value;
     changeBySearchName(temp);
 });
+
+// (Note that any new coffees you add will be lost when you refresh the page, for an extra challenge, research localStorage and see if you can find a way to persist the data)
 

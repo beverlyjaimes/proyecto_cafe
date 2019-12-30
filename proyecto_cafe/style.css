@@ -11,3 +11,7 @@ div, p {
 #coffee-id {
     display: none;
 }
+
+.coffees {
+    color: saddlebrown;
+}

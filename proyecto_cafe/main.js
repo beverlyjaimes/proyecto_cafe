@@ -94,8 +94,8 @@ let submitButton = document.querySelector('#submit');
 let roastSelection = document.querySelector('#roast-selection');
 let roastSearchN = document.getElementById('roast-search');
 let addCoffeeButton = document.querySelector('#addCoffee');
-let addCoffeeName = document.getElementById('#addCoffeeName');
-let addCoffeeRoast = document.getElementById('#addCoffeeRoast');
+let addCoffeeName = document.getElementById('addCoffeeName');
+let addCoffeeRoast = document.getElementById('addCoffeeRoast');
 
 //renders coffees on html
 div.innerHTML = renderCoffees(coffees);
@@ -103,7 +103,6 @@ div.innerHTML = renderCoffees(coffees);
 
 
 submitButton.addEventListener('click', updateCoffees);
-addCoffeeButton.addEventListener('click', addCoffee);
 
 roastSearchN.addEventListener("keyup", function () {
     let temp = roastSearchN.value;
@@ -112,7 +111,13 @@ roastSearchN.addEventListener("keyup", function () {
 
 // (Note that any new coffees you add will be lost when you refresh the page, for an extra challenge, research localStorage and see if you can find a way to persist the data)
 
-function addCoffee(roast, name) {
+//functions that adds coffee to coffees
+
+function addNewCoffee(addCoffeeRoast, addCoffeeName) {
     coffees.push({id: (coffees.length + 1), name: addCoffeeName.value, roast: addCoffeeRoast.value});
     div.innerHTML = renderCoffees(coffees);
 }
+
+addCoffeeButton.addEventListener("click", function (e) {
+    e.preventDefault();
+});

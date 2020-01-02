@@ -10,7 +10,17 @@
 <body class="text-center">
     <h1>Coffee!</h1>
     <div class="container">
-    <form>
+        <div class="row">
+
+        <div id="coffees" class="card col-md">
+            <p id="coffee-id">id</p>
+            <h4 id="coffee-name" class="card-header">NAME</h4>
+            <p id="coffee-roast" class="card-body coffroast">ROAST</p>
+        </div>
+
+        <div class="col-md">
+    <form class="card">
+        <h3>Search</h3>
         <label for="roast-selection">
         </label>
         <select id="roast-selection">
@@ -24,13 +34,9 @@
         <input id="roast-search" type="text" placeholder="Search" name="roast-search">
         <input id="submit" type="submit"  />
     </form>
-            <div id="coffees" class="card">
-                <p id="coffee-id">id</p>
-                <h4 id="coffee-name" class="card-header">NAME</h4>
-                <p id="coffee-roast" class="card-body coffroast">ROAST</p>
-            </div>
-
-    <form>
+            <br>
+    <form class="card">
+        <h3>Add a Coffee</h3>
         <label for="addCoffeeName">Add Coffee Name: </label>
         <input type="text" name="addCoffeeName" id="addCoffeeName">
         <label for="addCoffeeRoast">Add Coffee Roast:</label>
@@ -41,9 +47,11 @@
         </select>
         <input  id="addCoffee" type="submit" onclick="addNewCoffee(addCoffeeRoast,addCoffeeName);"/>
     </form>
+        </div>
+        </div>
+    </div>
 
     <script src="main.js"></script>
 
-    </div>
 </body>
 </html>

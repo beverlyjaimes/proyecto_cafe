@@ -112,3 +112,7 @@ roastSearchN.addEventListener("keyup", function () {
 
 // (Note that any new coffees you add will be lost when you refresh the page, for an extra challenge, research localStorage and see if you can find a way to persist the data)
 
+function addCoffee(roast, name) {
+    coffees.push({id: (coffees.length + 1), name: addCoffeeName.value, roast: addCoffeeRoast.value});
+    div.innerHTML = renderCoffees(coffees);
+}

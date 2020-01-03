@@ -121,3 +121,4 @@ function addNewCoffee(addCoffeeRoast, addCoffeeName) {
 addCoffeeButton.addEventListener("click", function (e) {
     e.preventDefault();
 });
+

@@ -1,10 +1,9 @@
-
+body{
+    background-color: saddlebrown !important;
+}
 
 
 #coffee-id {
     display: none;
 }
 
-.coffees {
-    color: saddlebrown;
-}

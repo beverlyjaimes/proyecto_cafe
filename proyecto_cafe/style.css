@@ -1,7 +1,10 @@
 body{
-    background-color: saddlebrown !important;
+    background-color: rgb(227, 255, 234) !important;
 }
 
+.hdr{
+    background: darkgreen !important;
+}
 
 #coffee-id {
     display: none;

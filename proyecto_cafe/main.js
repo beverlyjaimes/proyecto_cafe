@@ -34,10 +34,11 @@ function updateCoffees(e) {
     coffees.forEach(function(coffee) {
         if (coffee.roast === selectedRoast) {
             filteredCoffees.push(coffee);
-        } else if (selectedRoast === 'All') {
-            filteredCoffees.push(coffee);
-        //    Bonus All*
-        }
+            } else if (selectedRoast === 'All') {
+                filteredCoffees.push(coffee);
+            //    Bonus All*
+            }
+
     });
 
     div.innerHTML = renderCoffees(filteredCoffees);

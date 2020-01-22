@@ -1,14 +1,10 @@
 
 
 body{
-    background-color: rgb(227, 255, 234) !important;
+    background-color: rgb(227, 255, 234);
 
 }
-.hdr{
-    background: darkgreen !important;
-    /*font-family: 'Six Caps', sans-serif !important;*/
 
-}
 
 #coffee-id {
     display: none;
